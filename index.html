@@ -9,6 +9,7 @@
 @font-face {
   font-family: 'Tarrget Academy Regular';
   src: url('TarrgetAcademyRegular-ABEx.otf') format('opentype');
+  
 }
 
 body {
@@ -102,9 +103,9 @@ body {
   font-weight: lighter;
   background-color: transparent;
   border: none;
-  color: rgba(255, 0, 234, 0.705);
+  color: rgba(221, 182, 195, 0.705);
   cursor: pointer;
-  font-family: 'Charles George Regular', system-ui;
+  font-family: 'Tarrget Academy Regular', sans-serif;
   padding: 5px 10px; /* Adjusted padding */
   min-width: 60px; /* Changed width to min-width */
   
@@ -196,6 +197,77 @@ body {
   }
 }
 
+.container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.column {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0%;
+  overflow: hidden;
+}
+
+.left {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 80%;
+  overflow: hidden;
+  position: absolute;
+  writing-mode: vertical-lr;
+  transform: rotate(0deg);
+  text-align: right;
+  pointer-events: none;
+  font-family: 'AurebeshAfCanon-K7Ope';
+  padding: 5%;
+}
+
+.right {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 80%;
+  overflow: hidden;
+  position: absolute;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-align: left;
+  pointer-events: none;
+  font-family: 'AurebeshAfCanon-K7Ope';
+  padding: 5%;
+}
+@font-face {
+  font-family: 'AurebeshAfCanon-K7Ope';
+  src: url('AurebeshAfCanon-K7Ope.otf') format('opentype');
+}
+
+.left, .right {
+  font-family: 'AurebeshAfCanon-K7Ope', sans-serif;
+}
+
+
+p {
+  position: absolute;
+  font-size: 1000%;
+  color: #ffffff;
+  margin: 0;
+  white-space: nowrap;
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-5%);
+  }
+}
+
 
 </style>
 
@@ -204,8 +276,27 @@ body {
 </head>
 
 <body>
+  
   <div id="container">
+    <div class="column left">
+      <p>Python, Django , JavaScript , Apache ,React.js , Unity , React Native , Linux, JSON , GitHub , C , C++ , C# , Unity, Jira, Figma,
+        CSS , TensorFlow , MongoDB , Git , Node.js , Amazon Web Services (AWS) , MySQL , SQL , Java , HTML , Google Cloud
+        Platform (GCP) , Atlassian (Bitbucket, Jira), AWS (DynamoDB, EC2, Lambda, RDS, Redshift, S3, SQS), Microsoft (Azure
+        DevOps, Visual Studio), OpenCV , Agile Methodologies , Software Project Management , Data Structures and Algorithms
+        , Scrum, Systems Design , Game Development , Mobile Application Development , API Development , Data Analysis ,
+        Data Visualization , Back-End Web Development , Machine learning , Front-End Development , Software Development
+        , Artificial Intelligence (AI) , Full-Stack Development , Virtual Reality Development (VR</p>
+    </div>
+    <div class="column right">
+      <p>I oversaw the production, management, hosting, and implementation of a browser-based Java online multiplayer
+        game. I contributed to custom models, databases, and quality testing, ensuring that the server was capable of hosting
+        hundreds of players. I have experience in Java code, databases, IP routing, and bug testing, and I made significant
+        contributions to mathematical analysis, strategic balancing, and scripting for server core development. My expertise
+        in LUA also allowed me to create effective macros for synchronization and user interface features, such as visual HUDs
+        and alerts.
 
+        </p>
+    </div>
 
     <div class="background"></div> <!-- Add this line -->
     
