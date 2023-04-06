@@ -267,6 +267,11 @@ p {
     transform: translateY(-5%);
   }
 }
+.unclickable-video {
+  pointer-events: none;
+  
+}
+
 
 
 </style>
@@ -304,6 +309,18 @@ p {
       <span style="pointer-events: none;">Jason Godfrey</span>
     </div>
     <div class="subtitle"><span style="pointer-events: none;">Software_Developer Engineer ⊂(◉‿◉)つ</span>
+      <video id="myVideo" width="320" height="240" controls muted playsinline>
+        <source src="https://i.imgur.com/Q6nRu5V.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var video = document.getElementById("myVideo");
+          video.play();
+        });
+      </script>
+      
       <br>
       <br>
       
